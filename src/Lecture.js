@@ -11,7 +11,7 @@ import VideoView from './VideoView'
 
 const Lecture = (props) => {
 
-const [view, setView] =  useState("video")
+const [view, setView] =  useState("test")
 
 console.log()
 
@@ -19,7 +19,7 @@ console.log()
 if (view === 'video') {
     return <VideoView link={props.link}/>
 } else if (view === "test") {
-    return <TestView/>
+    return <TestView questions={props.test}/>
 } else return <Start/>
 
 }

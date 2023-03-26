@@ -15,7 +15,6 @@ const VideoView = (props) => {
                 muted={true}
                 playsinline={true}
             />
-
         </div>
     )
 }
